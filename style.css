@@ -82,9 +82,19 @@ h1 {
     text-align: center;
 }
 
+.card-body {
+    display: flex;
+    flex-direction: column; /* Imposta la direzione della flessione su verticale */
+    align-items: center; /* Allinea i pulsanti al centro verticalmente */
+}
+
 .card-body a.btn {
     background-color: #6472c4;
     color: #fff; /* Cambia il colore del testo per renderlo più leggibile */
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-radius: 5px; /* Aggiungi bordi arrotondati ai pulsanti */
 }
 
 .card-body a.btn:hover {
@@ -97,8 +107,14 @@ h1 {
     padding: 20px;
 }
 
-.navbar{
-    padding: 0;
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6472c4;
+    color: #fff; /* Cambia il colore del testo per renderlo più leggibile */
+    padding: 30px;
+    width: 100%;
 }
 
 #home-image{
@@ -128,3 +144,35 @@ h1 {
 #knowledges-image{
     width: 100;
 }
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6472c4;
+    color: #fff;
+    padding: 30px;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+  }
+  
+  .left {
+    margin-right: auto;
+  }
+
+  .left a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .right {
+    display: flex;
+  }
+  
+  .right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+  }
