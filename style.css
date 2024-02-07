@@ -1,71 +1,16 @@
-/* body {
-    margin: 0;
-}
-
-header{
-    display: flex;
-    text-align: center;
-    background-color: #6472c4;
-    color: white;
-    padding: 0 10px;
-    width: 100%;
-}
-
-main{
-    position: relative;
-}
-
-section {
-    display: grid;
-}
-
-main img {
-    width: 100%;
-}
-
-main div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20%;
-    height: 30%;
-    margin: 10px auto;
-    padding: 10px;
-    background-color: white;
-    border: 1px solid black;
-    text-align: center;
-}
-
-main a {
-    background-color: #6472c4;
-    color: white;
-}
-
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #6472c4;
-    color: white;
-    padding: 10px 10px;
-    width: 100%;
-    z-index: 1;
-} */
-
 body {
     margin: 0;
-    padding: 0; /* Rimuovi il padding predefinito del corpo della pagina */
+    padding: 0;
 }
 
 /* index.html */
 
 .container-fluid.text-center {
-    margin-bottom: 0; /* Rimuovi il margin inferiore per il container con l'ID "footer" */
+    margin-bottom: 0;
 }
 
 h1 {
-    margin-bottom: 0; /* Rimuovi il margin inferiore per l'elemento h1 */
+    margin-bottom: 0;
 }
 
 .image-wrapper {
@@ -84,8 +29,8 @@ h1 {
 
 .card-body {
     display: flex;
-    flex-direction: column; /* Imposta la direzione della flessione su verticale */
-    align-items: center; /* Allinea i pulsanti al centro verticalmente */
+    flex-direction: column;
+    align-items: center;
 }
 
 #chose-language{
@@ -94,15 +39,15 @@ h1 {
 
 .card-body a.btn {
     background-color: #6472c4;
-    color: #fff; /* Cambia il colore del testo per renderlo più leggibile */
+    color: #fff; 
     padding: 10px 20px;
     margin-bottom: 10px;
     text-decoration: none;
-    border-radius: 5px; /* Aggiungi bordi arrotondati ai pulsanti */
+    border-radius: 5px; 
 }
 
 .card-body a.btn:hover {
-    background-color: #3f4d9d; /* Cambia il colore quando il pulsante è in hover */
+    background-color: #3f4d9d; 
 }
 
 .container-fluid{
@@ -111,19 +56,7 @@ h1 {
     padding: 20px;
 }
 
-#footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #6472c4;
-    color: #fff; /* Cambia il colore del testo per renderlo più leggibile */
-    padding: 30px;
-    width: 100%;
-}
-
-/* #card-home{
-    top: 30%;
-} */
+/* home.html */
 
 .secret{
     background-color: white;
@@ -139,6 +72,8 @@ h1 {
 #home-image{
     width: 100%;
 }
+
+/* about.html */
 
 #main{
     padding: 0;
@@ -160,6 +95,8 @@ h1 {
     height: 100%;
 }
 
+/* knowledges.html */
+
 h2{
     margin-bottom: 30px;
 }
@@ -168,6 +105,7 @@ h2{
     width: 100;
 }
 
+/* navbar */
 
 .navbar {
     display: flex;
@@ -200,16 +138,32 @@ h2{
     margin-left: 20px;
   }
 
+  .right a:hover {
+    color: #3f4d9d;
+}
+
+  /* footer */
+
+  #footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6472c4;
+    color: #fff;
+    padding: 30px;
+    width: 100%;
+}
+
   /* Media query per tablet (larghezza massima: 992px) */
 @media (max-width: 992px) {
     .container-fluid {
-        padding: 15px; /* Riduci il padding per tablet */
+        padding: 15px;
     }
 }
 
 /* Media query per dispositivi mobili (larghezza massima: 768px) */
 @media (max-width: 768px) {
     .container-fluid {
-        padding: 10px; /* Riduci ulteriormente il padding per dispositivi mobili */
+        padding: 10px;
     }
 }
